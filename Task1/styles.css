@@ -1,0 +1,132 @@
+header{
+    background-image: url("yoga.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100%; 
+    padding-bottom:40%;
+}
+.tm-nav{
+    margin-left:50%;
+    padding:20px;
+}
+.tm-nav a{
+    padding:10px;
+    text-decoration: none;
+    font-size: large;
+    color:black;
+}
+.tm-nav a:hover{
+    background-color:orange;
+    border-radius:2px;
+}
+#book{
+    border:2px solid red;
+    border-radius:10px;
+    color:white;
+    margin-left:20px;
+    background-color: red;
+}
+#book:hover{
+    background-color:yellow;
+    color:black;
+}
+.box{display:flex;
+}
+.box-desc{
+    padding:10%;
+    padding-bottom:3%;
+    padding-left:20px;
+}
+.box-desc a{
+    border:2px solid black;
+    background-color: rgb(174, 131, 242);
+    text-decoration: none;
+    padding:10px;
+    margin:10px;
+    border-radius:5px;
+    color:black;
+}
+.box-desc p{
+    padding:10px;
+    line-height:30px;
+}
+.box1-desc{
+    padding:5%;
+    padding-bottom:3%;
+    padding-left:20px;
+}
+.box1-desc p{
+    padding:10px;
+    line-height:30px;
+}
+.box img{
+    padding:60px;
+    width:50%;
+    height:50%;
+}
+.tm-section marquee{
+    margin-top:4px;
+    font-size:larger;
+    padding:7px;
+    box-shadow: 2px 2px 2px rgb(11, 244, 135);
+    background-color:rgb(14, 222, 125);
+    
+}
+.tm-section{
+    background-image: linear-gradient(to bottom right,rgb(131, 214, 245),white,rgb(131,214,245));
+}
+.watch{
+    margin-left:47%;
+    position:absolute;
+    top:80%;
+    padding:10px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.watch:hover{
+    background-color:rgb(249, 249, 171);
+}
+footer{
+    background:url(footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top:7%;
+    padding-bottom: 1%;
+    text-align:center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    float:left;
+    margin:90px;
+    text-align: center;
+    font-family: arial;
+  }
+  /* Clearfix (clear floats) */
+   .card1::after {
+    content: "";
+    clear: both;
+    display:table;
+    padding:10px;
+  } 
+  .image{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    border-radius:10px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .fa{
+    padding:2%;
+    margin:1%;
+    background-color: black;
+    color:white;
+    border:1px solid black;
+    border-radius:10px;
+  }
+
+
+  
+  
+      
