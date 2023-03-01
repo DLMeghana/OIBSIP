@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Website</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#badges">Badges</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Majeti Dhanalakshmi Meghana </span>from AndhraPradesh</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                </div>
+                <div class="about-col-2">
+                    <p>Currently pursuing BTech in VVIT Nambur</p>
+                    <p>I am a quick learner who can quickly grasp and learn new things. I enjoy solving problems and can work calmly and efficiently under pressure. My critical thinking skills help me tackle problems rationally and use my judgement to make the right decisions.</p>
+                </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span><br>Technology</span><br><br>C</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>DBMS</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+            <li><span><br>Created ICCR website</span><br><br>
+                Designed a website which provides ICCR to monitor all the
+                activities conducted in their regional offices and also get
+                students engage in their activities</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span><br>2020-current</span><br>Pursuing BTech at VVIT</li>
+                <li><span>2018 - 2020</span><br>MPC at Sri Chaitanya</li>
+                <li><span>2018</span><br>HighSchool at Sri Sai Vidya Nikethan</li>
+            </ul>
+        </div>
+    </div>
+    <div id="badges">
+        <div class="container">
+            <h1 class="sub-title">Badges</h1>
+            <div class="badge-list">
+                <div class="badge">
+                   <img src="cloud.jpg">
+                </div>
+                <div class="badge">
+                    <img src="MTA.jpg">
+                 </div>
+                 <div class="badge">
+                    <img src="data.jpg">
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa fa-phone-square"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter-square"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Meghana</p>
+        </div>
+    
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName('tab-links');
+        var tabcontents=document.getElementsByClassName('tab-contents');
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
